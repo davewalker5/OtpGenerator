@@ -64,14 +64,14 @@ namespace OtpGenerator.CommandLine.Logic
             => _handlers.Add(CommandLineOptionType.Generate, new GenerateAction(_contextProvider, _generator, _manager, _dummyManager, resultHandler));
 
         /// <summary>
-        /// Register the handler for the "generate all" operation
+        /// Register the handler for the "import" operation
         /// </summary>
         /// <param name="resultHandler"></param>
         public void RegisterImportCommandHandler(IOperationResultHandler resultHandler)
             => _handlers.Add(CommandLineOptionType.Import, new ImportAction(_contextProvider, _manager, _dummyManager, _importer, resultHandler));
 
         /// <summary>
-        /// Register the handler for the "generate all" operation
+        /// Register the handler for the "export" operation
         /// </summary>
         /// <param name="resultHandler"></param>
         public void RegisterExportCommandHandler(IOperationResultHandler resultHandler)
@@ -85,7 +85,7 @@ namespace OtpGenerator.CommandLine.Logic
             => _handlers.Add(CommandLineOptionType.LiveView, new LiveViewAction(_contextProvider, _liveGenerator, _manager, _dummyManager, resultHandler));
 
         /// <summary>
-        /// Register the handler for the "show secrets" context option
+        /// Register the handler for the "verbose" context option
         /// </summary>
         /// <param name="resultHandler"></param>
         public void RegisterVerboseContextOptionHandler(IOperationResultHandler resultHandler)
