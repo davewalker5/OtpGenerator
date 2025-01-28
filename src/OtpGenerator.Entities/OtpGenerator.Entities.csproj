@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>OtpGenerator.Entities</PackageId>
+    <PackageVersion>1.10.0.0</PackageVersion>
+    <Authors>Dave Walker</Authors>
+    <Copyright>Copyright (c) 2025 Dave Walker</Copyright>
+    <Owners>Dave Walker</Owners>
+    <Summary>OTP Generator Entities</Summary>
+    <PackageTags>OTP Generator entities</PackageTags>
+    <Title>OTP Generator Entities</Title>
+    <Description>OTP Generator Entities</Description>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageProjectUrl>https://github.com/davewalker5/OtpGenerator</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <ReleaseVersion>1.10.0.0</ReleaseVersion>
+    <NoWarn>$(NoWarn);NU1900;NU1902;NU1904</NoWarn>
+  </PropertyGroup>
+
+</Project>

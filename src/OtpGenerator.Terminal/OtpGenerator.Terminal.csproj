@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ReleaseVersion>1.10.0.0</ReleaseVersion>
+    <FileVersion>1.10.0.0</FileVersion>
+    <ProductVersion>1.10.0.0</ProductVersion>
+    <Configurations>Release;Debug</Configurations>
+    <NoWarn>$(NoWarn);NU1900;NU1902;NU1904</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OtpGenerator.Entities\OtpGenerator.Entities.csproj" />
+    <ProjectReference Include="..\OtpGenerator.Logic\OtpGenerator.Logic.csproj" />
+    <ProjectReference Include="..\OtpGenerator.Configuration\OtpGenerator.Configuration.csproj" />
+    <ProjectReference Include="..\OtpGenerator.DataExchange\OtpGenerator.DataExchange.csproj" />
+    <ProjectReference Include="..\OtpGenerator.CommandLine\OtpGenerator.CommandLine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.49.1" />
+  </ItemGroup>
+</Project>
